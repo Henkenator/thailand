@@ -1,0 +1,129 @@
+<div class="title text-center">
+  <h2>Bokning</h2>
+</div>
+
+<main class="flyin-grid">
+  <div class="flyin-grid__item card" style="padding: 2rem">
+    <div class="title text-center">
+      <h4>Allmän information</h4>
+    </div>
+    <p>
+      Är du intresserad av att boka vårt hus för en oförglömlig vecka i exotiska Laem Mae Phim?
+      Läs först igenom informationen nedan och kontrollera att veckan är ledig i kalendern.
+      Förfrågan kan sedan skickas till oss via nedanstående formulär. Vi återkommer till dig
+      så fort vi kan.
+    </p>
+    <p>
+      Om så önskas fixar vi en taxi som hämtar på flygplatsen så att du bekvämt kommer hela
+      vägen fram till dörren. På plats möts du upp av vår partner som överlämnar nyckel och
+      visar dig runt i huset samt ger en genomgång av hur AC med mera fungerar. Du får även
+      telefonnummer till taxichaufförer och annan servicepersonal samt tips på bra guider i
+      området.
+    </p>
+  </div>
+
+
+  <div class="flyin-grid__item card" style="padding: 2rem">
+    <div class="title text-center">
+      <h4>Priser</h4>
+    </div>
+    <ul>
+      <li>Högsäsong: 1/11-10/4</li>
+      <ul>
+        <li>1 vecka 6 000 kr</li>
+        <li>2 veckor 10 000 kr</li>
+        <li>3 veckor 14 000 kr</li>
+      </ul>
+
+      <li>Lågsäsong: 11/4-31/10</li>
+      <ul>
+        <li>1 vecka 4 000 kr</li>
+        <li>2 veckor 7 500 kr</li>
+        <li>3 veckor 11 000 kr</li>
+      </ul>
+
+      <li>Städning ingår i priset</li>
+      <li>El och vatten ingår upp till 2500 Bath/månad (normalförbrukning) därefter betalas el och vatten efter
+        förbrukning
+      </li>
+      <li>Vi hyr ut veckovis med början på lördagar</li>
+
+    </ul>
+    <h4>Övrigt</h4>
+    <ul>
+      <li>Inga husdjur</li>
+      <li>Rökning sker utomhus</li>
+    </ul>
+  </div>
+
+  <div class="flyin-grid__item card" style="padding: 2rem">
+    <div class="title text-center">
+      <h4>Bokningsformulär</h4>
+    </div>
+
+    <form [formGroup]="bookingForm" (submit)="onSubmit()">
+
+      <div class="form-control">
+        <label for="name">
+          För- och efternamn
+        </label>
+        <input type="text" id="name" formControlName="name">
+      </div>
+
+      <div>
+        <label for="address">
+          Adress
+        </label>
+        <input type="text" id="address" formControlName="address">
+      </div>
+
+      <div>
+        <label for="zipCode">
+          Postnummer
+        </label>
+        <input type="text" id="zipCode" formControlName="zipCode">
+      </div>
+
+      <div>
+        <label for="city">
+          Stad
+        </label>
+        <input type="text" id="city" formControlName="city">
+      </div>
+
+      <div>
+        <label for="phone">
+          Telefonnummer
+        </label>
+        <input type="text" id="phone" formControlName="phone">
+      </div>
+
+      <div>
+        <label for="email">
+          Email
+        </label>
+        <input type="text" id="email" formControlName="email">
+      </div>
+
+      <div>
+        <label for="message">
+          Meddelande
+        </label>
+        <input type="text" id="message" formControlName="message">
+      </div>
+      <button>Skicka</button>
+    </form>
+
+  </div>
+
+  <div class="flyin-grid__item card" style="padding: 2rem">
+    <!--<div class="title text-center">
+      <h4>Bokningskalender</h4>
+    </div>-->
+    <iframe height="400" width="400"
+            src="https://calendar.google.com/calendar/embed?title=Bokningskalender&showPrint=0&showTabs=0&showCalendars=0&showTz=0&height=300&wkst=2&hl=sv&bgcolor=%23ffffff&src=info@hyraithailand.se&color=%232952A3&ctz=Europe/Stockholm">
+      (Om du inte ser en kalender här, uppdatera din browser eller byt till en annan)
+    </iframe>
+  </div>
+
+</main>
