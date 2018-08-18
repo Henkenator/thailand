@@ -42,6 +42,8 @@ body {
 h1, h2, h3, h4 {
   font-family: Sansita, serif;
   letter-spacing: 0.03em;
+  color: var(--dark-blue);
+  text-transform: uppercase;
 }
 
 main {
@@ -54,6 +56,10 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1080px;
+}
+
+.background_color2 {
+  background-color: whitesmoke;
 }
 
 
@@ -219,8 +225,8 @@ img {
 .page-footer {
 /*  margin-top: 3em;
   padding: 1em 0;*/
-  background-color: var(--light-blue);
-  color: var(--light-yellow);
+  background-color: white;
+  color: gray;
   padding: 1rem;
 }
 .page-footer__inner {
@@ -236,6 +242,7 @@ img {
   perspective: 500px;
 }
 
+/*
 .flyin-grid__item {
   animation: fly-in 600ms ease-in;
   animation-fill-mode: both;
@@ -263,6 +270,7 @@ img {
     transform: translateZ(0) rotateY(0) rotateZ(1deg);
   }
 }
+*/
 
 .card {
   margin-bottom: 1em;
@@ -315,6 +323,12 @@ img {
   padding:0.5em;
 }
 
+.info {
+  background-color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
 
 /*
     Utility classes
