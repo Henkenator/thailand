@@ -95,9 +95,7 @@ img {
   color: var(--dark-text)
 }
 
-.title > h4 {
-  padding-left: 2em;
-}
+
 
 /*@media (min-width: 35em) {
   .title > h1 {
@@ -295,6 +293,14 @@ img {
   width: 100%;
 }
 
+.card_title {
+  padding-left: 2em;
+  text-transform: uppercase;
+}
+.card_text {
+  padding: 0 2em 1em 2em;
+}
+
 .clickable:hover {
   opacity: 0.75;
 }
@@ -323,11 +329,23 @@ img {
       margin: 0;
     }
   }
-
 }
 
-.form-control {
+@media (min-width: 30em) {
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /*margin*/
+  }
+  .card-grid_item {
+    flex: 1;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 2.4em;
+    /*max-width: 1080px;*/
+  }
 }
+
 
 .hero {
   max-width: 350px;
