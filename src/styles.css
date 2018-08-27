@@ -310,7 +310,11 @@ img {
   text-transform: uppercase;
 }
 .card_text {
-  padding: 0 2em 1em 2em;
+  padding: 0.5em 2em 1em 2em;
+}
+
+.card_text_link {
+  font-family: Sansita, serif;
 }
 
 .clickable:hover {
@@ -319,6 +323,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
 
 /*
