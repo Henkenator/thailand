@@ -15,6 +15,8 @@ import { HouseComponent } from './components/house/house.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {CarouselComponent, CarouselItemDirective, CarouselItemElement} from './components/carousel/carousel.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 export const appRoutes: Routes = [
   {path: '', component: StartComponent},
@@ -40,7 +42,10 @@ export const appRoutes: Routes = [
     AreaComponent,
     HouseComponent,
     ActivitiesComponent,
-    GalleryComponent
+    GalleryComponent,
+    CarouselComponent,
+    CarouselItemDirective,
+    CarouselItemElement
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,8 @@ export const appRoutes: Routes = [
       appRoutes,
       //{ enableTracing: true } // <-- debugging purposes only
     ),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
