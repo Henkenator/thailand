@@ -12,6 +12,7 @@ html {
   --dark-text: #4a4a4a;
   --gray-brown: #efeae6;
   --light-gray-brown: #f5f0eb;
+  --brown-text: #707070;
 }
 
 :root {
@@ -46,7 +47,8 @@ body {
 h1, h2, h3, h4 {
   font-family: Sansita, serif;
   letter-spacing: 0.03em;
-  color: var(--dark-text);
+  /*color: var(--dark-text);*/
+  color: var(--brown-text);
   /*text-transform: uppercase;*/
 }
 
@@ -259,40 +261,6 @@ img {
 }
 
 
-.flyin-grid {
-  margin: 0 1rem;
-  perspective: 500px;
-}
-
-/*
-.flyin-grid__item {
-  animation: fly-in 600ms ease-in;
-  animation-fill-mode: both;
-}
-.flyin-grid__item:nth-child(2) {
-  animation-delay: 0.15s;
-}
-.flyin-grid__item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.flyin-grid__item:nth-child(4) {
-  animation-delay: 0.45s;
-}
-
-@keyframes fly-in {
-  0% {
-    transform: translateZ(-800px) rotateY(90deg) rotateZ(-45deg);
-    opacity: 0;
-  }
-  56% {
-    transform: translateZ(-160px) rotateY(87deg) rotateZ(-30deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateZ(0) rotateY(0) rotateZ(1deg);
-  }
-}
-*/
 
 .card {
   margin-bottom: 1em;
@@ -397,42 +365,26 @@ a:visited {
 
 
 
+
 [target=color-green] {
   background-color: green;
   color: white;
 }
 
-
-
-@media (min-width: 30em) {
-  .flyin-grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 5rem;
-  }
-  .flyin-grid__item {
-    flex: 1 1 300px;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    max-width: 600px;
-  }
-
-  @supports (display: grid) {
-    .flyin-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 2em;
-    }
-    .flyin-grid__item {
-      max-width: initial;
-      margin: 0;
-    }
-  }
-}
-
 .card-grid_item {
   position: relative;
 }
+
+.card-img-left {
+  width: 35%;
+  float: left;
+}
+
+.card-textbox {
+  margin-left: 35%;
+}
+
+
 
 .link-arrow {
   position: absolute;
@@ -456,6 +408,36 @@ a:visited {
   }
 }
 
+.big-link {
+  background-color: #b2a37b;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  text-align:center
+}
+
+.link-text {
+  text-transform: uppercase;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+
+}
+
+.inform-container {
+  text-align:center;
+  color: #707070;
+  margin-bottom: 1.5em;
+}
+
+.inform-header {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.inform-text {
+  font-size: 1.1em;
+}
 
 .hero {
   max-width: 350px;
