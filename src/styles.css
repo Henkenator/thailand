@@ -59,12 +59,12 @@ img {
   max-width: 1080px;
 }
 
-
+/*
 .page-header {
   padding: 6em 1em;
   background: url(assets/images/header.jpg) no-repeat;
   background-size: cover;
-}
+}*/
 
 .title > h1 {
   color: var(--orange);

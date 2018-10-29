@@ -16,7 +16,7 @@ import {animate, AnimationBuilder, AnimationFactory, AnimationPlayer, style} fro
 })
 export class CarouselItemDirective {
 
-  constructor( public tpl : TemplateRef<any> ) {
+  constructor( public tpl: TemplateRef<any> ) {
   }
 
 }
@@ -39,9 +39,10 @@ export class CarouselItemElement {
         </li>
       </ul>
     </section>
-    <div *ngIf="showControls" style="margin-top: 1em">
-      <button (click)="next()" class="btn btn-default">Next</button>
-      <button (click)="prev()" class="btn btn-default">Prev</button>
+    <div *ngIf="showControls" style="margin-top: 1em" class="control-container">
+      <button (click)="prev()" class="btn btn-default" style="margin-right: 10px">Föreg</button>
+      {{currentSlide + 1}} av {{items.length}}
+      <button (click)="next()" class="btn btn-default" style="margin-left: 10px">Nästa</button>
     </div>
   `,
   styles: [`
@@ -59,19 +60,25 @@ export class CarouselItemElement {
     .carousel-inner {
       display: flex;
     }
+    .control-container {
+      display: flex;
+      justify-content: center;
+    }
 
   `]
 })
 export class CarouselComponent implements AfterViewInit {
-  @ContentChildren(CarouselItemDirective) items : QueryList<CarouselItemDirective>;
+  @ContentChildren(CarouselItemDirective) items: QueryList<CarouselItemDirective>;
   @ViewChildren(CarouselItemElement, { read: ElementRef }) private itemsElements: QueryList<ElementRef>;
-  @ViewChild('carousel') private carousel : ElementRef;
+  @ViewChild('carousel') private carousel: ElementRef;
+
   @Input() timing = '250ms ease-in';
   @Input() showControls = true;
-  private player : AnimationPlayer;
-  private itemWidth : number;
+
+  private player: AnimationPlayer;
+  private itemWidth: number;
   private currentSlide = 0;
-  carouselWrapperStyle = {}
+  carouselWrapperStyle = {};
 
   next() {
     if ( this.currentSlide + 1 === this.items.length ) {
@@ -103,7 +110,7 @@ export class CarouselComponent implements AfterViewInit {
     this.player.play();
   }
 
-  constructor( private builder : AnimationBuilder ) {
+  constructor( private builder: AnimationBuilder ) {
   }
 
   ngAfterViewInit() {
