@@ -283,7 +283,14 @@ a:visited {
   margin-bottom: 1.5em;
 }
 
+.inform-container2 {
+  color: #707070;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 .inform-header {
+  text-align:center;
   text-transform: uppercase;
   font-size: 1.8em;
 }

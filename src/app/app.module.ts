@@ -23,7 +23,7 @@ export const appRoutes: Routes = [
   {path: 'huset', component: HouseComponent},
   {path: 'omradet', component: AreaComponent},
   {path: 'aktiviteter', component: ActivitiesComponent},
-  {path: 'galleri', component: GalleryComponent},
+  // {path: 'galleri', component: GalleryComponent},
   {path: 'bokning', component: BookingComponent},
   {path: 'kontakt', component: ContactComponent},
   {path: '**', component: PageNotFoundComponent},
