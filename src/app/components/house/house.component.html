@@ -41,7 +41,7 @@
     <div class="card_title">
       <h2>Inomhus</h2>
     </div>
-    <div class="card_text">
+    <div class="card_text" style="width: 40%; float: left;">
 
       <ul>
         <li>Två sovrum, båda med dubbelsängar, garderober och varsitt helkaklat badrum</li>
@@ -53,10 +53,6 @@
         <li>Badrum och tvättmaskin</li>
         <li>Luftkonditionering i alla rum</li>
         <li>Bredband/ADSL finns men kostnad tillkommer</li>
-        <li>Huset har 2 altaner. Den på övre plan har utgång från både sovrum och TV-rum. Där finns möjlighet till
-          både sol, skugga och havsutsikt. Den nedre har utgång från vardagsrummet. Utanför det andra sovrummet
-          finns en liten balkong.
-        </li>
       </ul>
 
     </div>
@@ -64,7 +60,7 @@
       <carousel>
         <ng-container *ngFor="let item of indoorImages;">
           <ng-container *carouselItem>
-            <img src="{{item.src}}" width="700px">
+            <img src="{{item.src}}" width="600px">
             <div class="image-caption">{{item.text}}</div>
           </ng-container>
         </ng-container>
@@ -80,20 +76,48 @@
     <div class="card_title">
       <h2>Utomhus</h2>
     </div>
-    <div class="card_text">
 
-      <ul>
-        <li>Tomt runt huset</li>
-        <li>2 pooler finns på området, varav den ena precis utanför dörren</li>
-        <li>Uteförråd med cyklar, leksaker, golfbagar mm. (se utrustningslista nedan)</li>
-      </ul>
+    <div style="width: 35%; float: left;">
 
+      <div class="card_text">
+
+        <ul>
+          <li>Huset har 2 altaner. Den på övre plan har utgång från både sovrum och TV-rum. Där finns möjlighet till
+            både sol, skugga och havsutsikt. Den nedre har utgång från vardagsrummet. Utanför det andra sovrummet
+            finns en liten balkong.
+          </li>
+          <li>Tomt runt huset</li>
+          <li>2 pooler finns på området, varav den ena precis utanför dörren</li>
+          <li>Uteförråd med cyklar, leksaker, golfbagar mm. (se utrustningslista nedan)</li>
+        </ul>
+
+      </div>
+      <!--<div class="card_title">
+        <h2>Utrustningslista</h2>
+      </div>
+      <div class="card_text">
+
+        <ul>
+          <li>Sängkläder, handdukar strandhanddukar och köksutrustning för 6 personer</li>
+          <li>1 spjälsäng</li>
+          <li>2 cyklar</li>
+          <li>1 cykelbarnstol</li>
+          <li>1 barnstol</li>
+          <li>1 barn-/sittvagn</li>
+          <li>1 strykjärn och strykbräda</li>
+          <li>1 gästluftmadrass</li>
+          <li>Leksaker: 1 gåstol, Bobbycar, moped, blandade strandleksaker, miniverktygsset mm.</li>
+          <li>Några DVD-filmer och pocketböcker finns</li>
+        </ul>
+
+      </div>-->
     </div>
+
     <div class="container">
       <carousel>
         <ng-container *ngFor="let item of outdoorImages;">
           <ng-container *carouselItem>
-            <img src="{{item.src}}" width="700px">
+            <img src="{{item.src}}" width="600px">
             <div class="image-caption">{{item.text}}</div>
           </ng-container>
         </ng-container>
