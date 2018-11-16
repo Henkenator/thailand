@@ -1,0 +1,60 @@
+.booking-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /*margin*/
+}
+
+.booking-item {
+  flex: 1;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  margin-bottom: 2.4em;
+  /*max-width: 1080px;*/
+}
+
+.form-control {
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.label {
+  color: white;
+  padding-bottom: 0.15em;
+}
+
+.form-title > h4 {
+  color: white;
+  font-family: Helvetica;
+  text-transform: uppercase;
+}
+
+
+
+.submit-button {
+  background-color: white;
+  color: #454545;
+  border: 2px solid #454545;
+  border-color: #454545;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.submit-button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.submit-button:hover {
+  background-color: #454545;
+  color: white;
+}
+
