@@ -1,0 +1,14 @@
+.header_pane {
+  height: 4em;
+  width: 100vw;
+  background-color: white;
+}
+
+.header_pane > h1 {
+  margin: 0;
+  padding-top: 0.3em;
+  text-align: center;
+  color: var(--orange);
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px #148;
+}
