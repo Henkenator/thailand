@@ -1,45 +1,36 @@
-<div class="menu_pane">
-  <div class="container">
-    <nav class="main-nav">
-      <ul class="nav-links">
-        <li>
-          <a routerLink="" routerLinkActive="active">
-            <span class="nav-links__label">Start</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="huset" routerLinkActive="active">
-            <span class="nav-links__label">Huset</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="omradet" routerLinkActive="active">
-            <span class="nav-links__label">Området</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="aktiviteter" routerLinkActive="active">
-            <span class="nav-links__label">Aktiviteter</span>
-          </a>
-        </li>
-        <!--<li>
-          <a routerLink="galleri" routerLinkActive="active">
-            <span class="nav-links__label">Bildgalleri</span>
-          </a>
-        </li>-->
-        <li>
-          <a routerLink="bokning" routerLinkActive="active">
-            <span class="nav-links__label">Bokning</span>
-          </a>
-        </li>
-        <!--<li>
-          <a routerLink="kontakt" routerLinkActive="active">
-            <span class="nav-links__label">Kontakt</span>
-          </a>
-        </li>-->
-      </ul>
-    </nav>
+<nav class="menu" id="main-menu" [ngClass]="{'is-open': displayDropdown}">
+  <button class="menu-toggle" id="toggle-menu" (click)="toggle()">
+    toggle menu
+  </button>
+  <div class="menu-dropdown">
+    <ul class="nav-menu">
+      <li>
+        <a routerLink="" routerLinkActive="active" (click)="toggle()">
+          <span class="nav-links__label">Start</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="huset" routerLinkActive="active" (click)="toggle()">
+          <span class="nav-links__label">Huset</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="omradet" routerLinkActive="active" (click)="toggle()">
+          <span class="nav-links__label">Området</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="aktiviteter" routerLinkActive="active" (click)="toggle()">
+          <span class="nav-links__label">Aktiviteter</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="bokning" routerLinkActive="active" (click)="toggle()">
+          <span class="nav-links__label">Bokning</span>
+        </a>
+      </li>
+    </ul>
   </div>
   <div class="nav-line"></div>
   <div class="nav-line2"></div>
-</div>
+</nav>
