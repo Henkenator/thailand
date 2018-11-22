@@ -1,4 +1,56 @@
 <div class="header_pane">
-  <h1>Hyr hus i Mae Phim, Thailand</h1>
-</div>
+  <div class="container">
 
+    <div class="header-row">
+      <div class="header-row-item1">
+        <div class="header-text header1">Hyr hus i Mae Phim</div>
+        <div class="header-text header2">Thailand</div>
+
+      </div>
+
+      <nav class="menu header-row-item2" id="main-menu" [ngClass]="{'is-open': displayDropdown}">
+
+        <button class="menu-toggle" id="toggle-menu" (click)="toggle()">
+          toggle menu
+        </button>
+        <div class="menu-dropdown">
+          <ul class="nav-menu">
+            <li>
+              <a routerLink="" routerLinkActive="active" (click)="toggle()">
+                <div><img src="assets/svg/star.svg" class="nav-links__icon"/></div>
+                <div><span>Start</span></div>
+              </a>
+            </li>
+            <li>
+              <a routerLink="huset" routerLinkActive="active" (click)="toggle()">
+                <div><img src="assets/svg/home.svg" class="nav-links__icon"/></div>
+                <div><span>Huset</span></div>
+              </a>
+            </li>
+            <li>
+              <a routerLink="omradet" routerLinkActive="active" (click)="toggle()">
+                <div><img src="assets/svg/mark.svg" class="nav-links__icon"/></div>
+                <div><span>Området</span></div>
+              </a>
+            </li>
+            <li>
+              <a routerLink="aktiviteter" routerLinkActive="active" (click)="toggle()">
+                <div><img src="assets/svg/globe.svg" class="nav-links__icon"/></div>
+                <div><span>Aktiviteter</span></div>
+              </a>
+            </li>
+            <li>
+              <a routerLink="bokning" routerLinkActive="active" (click)="toggle()">
+                <div><img src="assets/svg/document.svg" class="nav-links__icon"/></div>
+                <div><span>Bokning</span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+  <div class="nav-line"></div>
+  <div class="nav-line2"></div>
+</div>
