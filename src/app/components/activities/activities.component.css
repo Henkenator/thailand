@@ -1,0 +1,45 @@
+.activities-inform-container {
+  color: #707070;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.activities-inform-header {
+  /*text-align:center;*/
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.activities-inform-text {
+  font-size: 1.1em;
+}
+
+.activities-grid {
+  display: flex;
+  margin: 0 -10px 60px -10px;
+}
+
+.activities-grid-item {
+  flex: 1;
+  margin: 0 10px 10px;
+}
+
+.activities-card {
+  background-color: white;
+  color: hsl(210, 15%, 20%);
+  box-shadow: 0.1em 0.3em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  padding: 0.5em 2em 1em 2em;
+}
+
+.card-img-left {
+  width: 50%;
+  float: left;
+}
+
+.card-textbox {
+  margin-left: 50%;
+}
