@@ -1,6 +1,6 @@
 .start-grid {
   display: flex;
-  margin: 0 -10px 60px -10px;
+  margin: 0 -10px 40px -10px;
 }
 
 .start-grid-item {
@@ -35,4 +35,21 @@
 .start-card-header > h2 {
   text-transform: uppercase;
   font-family: Source Sans Pro,Arial;
+}
+
+.start-big-link {
+  background-color: #a48c6a;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  text-align:center;
+  margin-top: 0px;
+}
+
+.start-link-text {
+  text-transform: uppercase;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+
 }
