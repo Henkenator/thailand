@@ -6,7 +6,7 @@
 }
 
 .activities-inform-header {
-  /*text-align:center;*/
+  text-align:center;
   text-transform: uppercase;
   font-size: 1.8em;
 }
@@ -31,15 +31,15 @@
   box-shadow: 0.1em 0.3em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-.card-text {
+.activities-card-text {
   padding: 0.5em 2em 1em 2em;
 }
 
-.card-img-left {
+.activities-card-img-left {
   width: 50%;
   float: left;
 }
 
-.card-textbox {
+.activities-card-textbox {
   margin-left: 50%;
 }
