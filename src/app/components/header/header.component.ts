@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
 
   displayDropdown = false;
 
+  highlighted = true;
+
   constructor() { }
 
   ngOnInit() {

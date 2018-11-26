@@ -13,6 +13,8 @@ html {
   --gray-brown: #efeae6;
   --light-gray-brown: #f5f0eb;
   --brown-text: #707070;
+  --green: #1d9886;
+  --red: #db4857;;
 }
 
 :root {
@@ -167,10 +169,12 @@ a:visited {
 
 [target=color-green1] {
   background-color: white;
-  color: #b9cba7;
+  /*color: #b9cba7;*/
+  color: var(--red);
 }
 [target=color-green2] {
-  background-color: #b9cba7;
+  /*background-color: #b9cba7;*/
+  background-color: var(--red);;
   color: white;
 }
 

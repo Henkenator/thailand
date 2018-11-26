@@ -154,6 +154,7 @@
   .nav-menu > li > a:focus
   {
     color: var(--orange);
+    fill: var(--orange);
 
   }
 
@@ -161,5 +162,18 @@
     height: 1.2em;
     width: 1.2em;
     display: inline-block;
+  }
+
+  .icon {
+    fill: var(--dark-text);
+  }
+  .icon:active,
+  .icon:hover,
+  .icon:focus
+  {
+    /*fill: var(--orange);*/
+  }
+  .highlightedIcon {
+    fill: var(--orange);
   }
 }

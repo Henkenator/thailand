@@ -38,7 +38,9 @@
 }
 
 .start-big-link {
-  background-color: #a48c6a;
+  /*background-color: #a48c6a;*/
+  /*background-color: #4a4a4a;*/
+  background-color: var(--green);
   padding-top: 1.3em;
   padding-bottom: 1.3em;
   text-align:center;
@@ -51,5 +53,40 @@
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+}
 
+.start-clickable:hover {
+  opacity: 0.75;
+}
+
+.start-inform-container {
+  color: #707070;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.start-inform-header {
+  text-align:center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.start-inform-text {
+  font-size: 1.1em;
+}
+
+.start-card-text {
+  padding: 0.5em 2em 1em 2em;
+}
+
+.start-card-text-link {
+  /*font-family: Sansita, serif;*/
+}
+
+.start-link-arrow {
+  position: absolute;
+  bottom: 0.5em;
+  right: 1.5em;
+  font-size: 1.5em;
 }
