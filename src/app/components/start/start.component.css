@@ -97,10 +97,12 @@
 
 .pic-header {
   position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
   color: white;
-  top: 100px;
-  left: 100px;
   font-size: 3em;
   font-weight: bolder;
   text-transform: uppercase;
+  text-shadow: 0 0 0.7rem rgba(0,0,0,0.2);
 }
