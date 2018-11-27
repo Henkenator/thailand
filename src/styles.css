@@ -159,58 +159,6 @@ a:visited {
   box-shadow: 0 1px 7px rgba(0,0,0,0.1);
 }
 
-.tape-1 > span,
-.tape-2 > span {
-  text-transform: uppercase;
-  font-family: Helvetica;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-[target=color-green1] {
-  background-color: white;
-  /*color: #b9cba7;*/
-  color: var(--red);
-}
-[target=color-green2] {
-  /*background-color: #b9cba7;*/
-  background-color: var(--red);;
-  color: white;
-}
-
-[target=color-blue1] {
-  background-color: white;
-  color: #8eb8c4;
-}
-[target=color-blue2] {
-  background-color: #8eb8c4;
-  color: white;
-}
-[target=color-greenish1] {
-  background-color: white;
-  color: #cec947;
-}
-[target=color-greenish2] {
-  background-color: #cec947;
-  color: white;
-}
-[target=color-brown1] {
-  background-color: white;
-  color: #b2a37b;
-}
-[target=color-brown2] {
-  background-color: #b2a37b;
-  color: white;
-}
-
-
-
-
-[target=color-green] {
-  background-color: green;
-  color: white;
-}
-
 .card-grid_item {
   position: relative;
 }

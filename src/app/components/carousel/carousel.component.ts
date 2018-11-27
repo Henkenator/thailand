@@ -39,9 +39,9 @@ export class CarouselItemElement {
         </li>
       </ul>
     </section>
-    <div *ngIf="showControls" style="margin-top: 1em" class="control-container">
-      <button (click)="prev()" class="btn btn-default" style="margin-right: 10px">Föreg</button>
-      {{currentSlide + 1}} av {{items.length}}
+    <div *ngIf="showControls" style="background-color: #4a4a4a; padding-bottom: 1em" class="control-container">
+      <button (click)="prev()" class="btn btn-default" style="margin-right: 10px;">Föreg</button>
+      <span style="color: white; padding-top: 0.5em;">Bild {{currentSlide + 1}} av {{items.length}}</span>
       <button (click)="next()" class="btn btn-default" style="margin-left: 10px">Nästa</button>
     </div>
   `,
@@ -63,6 +63,18 @@ export class CarouselItemElement {
     .control-container {
       display: flex;
       justify-content: center;
+    }
+    button {
+      background-color: var(--orange);
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: uppercase;
+      /*margin: 4px 2px;*/
     }
 
   `]

@@ -1,32 +1,9 @@
-<!--
-<main class="card-grid">
-  <div class="card-grid_item card">
-    <div class="card-img-left">
-      <img src="../../../assets/images/gallery/hus2.jpg" alt="hopp" style="width: 400px"/>
-    </div>
-
-    <div class="card-textbox">
-      <div class="card_title">
-        <h2>Utforska huset</h2>
-      </div>
-      <div class="card_text">
-        <p>
-          Huset är nybyggt och välutrustat med plats för minst 6 personer, (173 kvm inklusive altan).
-          Det ligger i Laem Mae Phim, Rayong, 20 mil sydost om Bangkok. Det är en smakfullt inredd
-          tvåplansvilla med ljus och öppen planlösning och väl tilltagna gemensamhetsutrymmen.
-          Avståndet från havet är endast 200 m!
-        </p>
-      </div>
-    </div>
-  </div>
-</main>-->
-
-<div class="inform-container2">
-  <div class="inform-header">
+<div class="house-inform-container">
+  <div class="house-inform-header">
     <span>UTFORSKA HUSET</span>
   </div>
-  <div class="inform-text">
-    <span>
+  <div class="house-inform-text">
+     <span>
           Huset är nybyggt och välutrustat med plats för minst 6 personer, (173 kvm inklusive altan).
           Det ligger i Laem Mae Phim, Rayong, 20 mil sydost om Bangkok. Det är en smakfullt inredd
           tvåplansvilla med ljus och öppen planlösning och väl tilltagna gemensamhetsutrymmen.
@@ -35,14 +12,20 @@
   </div>
 </div>
 
-<main class="card-grid">
-  <div class="card-grid_item card">
-
-    <div class="card_title">
-      <h2>Inomhus</h2>
+<main class="house-grid">
+  <div class="house-grid-item house-card">
+    <div class="pic">
+      <carousel>
+        <ng-container *ngFor="let item of indoorImages;">
+          <ng-container *carouselItem>
+            <img src="{{item.src}}" width="600px">
+            <div class="image-caption">{{item.text}}</div>
+          </ng-container>
+        </ng-container>
+      </carousel>
     </div>
-    <div class="card_text" style="width: 40%; float: left;">
-
+    <div class="house-card-text">
+      <h3 class="house-card-header">Inomhus</h3>
       <ul>
         <li>Två sovrum, båda med dubbelsängar, garderober och varsitt helkaklat badrum</li>
         <li>Vardagsrum med soffplats för 8 personer samt stereo med CD</li>
@@ -53,89 +36,6 @@
         <li>Badrum och tvättmaskin</li>
         <li>Luftkonditionering i alla rum</li>
         <li>Bredband/ADSL finns men kostnad tillkommer</li>
-      </ul>
-
-    </div>
-    <div class="container">
-      <carousel>
-        <ng-container *ngFor="let item of indoorImages;">
-          <ng-container *carouselItem>
-            <img src="{{item.src}}" width="600px">
-            <div class="image-caption">{{item.text}}</div>
-          </ng-container>
-        </ng-container>
-      </carousel>
-    </div>
-  </div>
-</main>
-
-
-<main class="card-grid">
-  <div class="card-grid_item card">
-
-    <div class="card_title">
-      <h2>Utomhus</h2>
-    </div>
-
-    <div style="width: 35%; float: left;">
-
-      <div class="card_text">
-
-        <ul>
-          <li>Huset har 2 altaner. Den på övre plan har utgång från både sovrum och TV-rum. Där finns möjlighet till
-            både sol, skugga och havsutsikt. Den nedre har utgång från vardagsrummet. Utanför det andra sovrummet
-            finns en liten balkong.
-          </li>
-          <li>Tomt runt huset</li>
-          <li>2 pooler finns på området, varav den ena precis utanför dörren</li>
-          <li>Uteförråd med cyklar, leksaker, golfbagar mm. (se utrustningslista nedan)</li>
-        </ul>
-
-      </div>
-      <!--<div class="card_title">
-        <h2>Utrustningslista</h2>
-      </div>
-      <div class="card_text">
-
-        <ul>
-          <li>Sängkläder, handdukar strandhanddukar och köksutrustning för 6 personer</li>
-          <li>1 spjälsäng</li>
-          <li>2 cyklar</li>
-          <li>1 cykelbarnstol</li>
-          <li>1 barnstol</li>
-          <li>1 barn-/sittvagn</li>
-          <li>1 strykjärn och strykbräda</li>
-          <li>1 gästluftmadrass</li>
-          <li>Leksaker: 1 gåstol, Bobbycar, moped, blandade strandleksaker, miniverktygsset mm.</li>
-          <li>Några DVD-filmer och pocketböcker finns</li>
-        </ul>
-
-      </div>-->
-    </div>
-
-    <div class="container">
-      <carousel>
-        <ng-container *ngFor="let item of outdoorImages;">
-          <ng-container *carouselItem>
-            <img src="{{item.src}}" width="600px">
-            <div class="image-caption">{{item.text}}</div>
-          </ng-container>
-        </ng-container>
-      </carousel>
-    </div>
-  </div>
-</main>
-
-
-<main class="card-grid">
-  <div class="card-grid_item card">
-
-    <div class="card_title">
-      <h2>Utrustningslista</h2>
-    </div>
-    <div class="card_text">
-
-      <ul>
         <li>Sängkläder, handdukar strandhanddukar och köksutrustning för 6 personer</li>
         <li>1 spjälsäng</li>
         <li>2 cyklar</li>
@@ -147,77 +47,31 @@
         <li>Leksaker: 1 gåstol, Bobbycar, moped, blandade strandleksaker, miniverktygsset mm.</li>
         <li>Några DVD-filmer och pocketböcker finns</li>
       </ul>
+    </div>
+  </div>
 
+  <div class="house-grid-item house-card">
+    <div class="pic">
+      <carousel>
+        <ng-container *ngFor="let item of outdoorImages;">
+          <ng-container *carouselItem>
+            <img src="{{item.src}}" width="600px">
+            <div class="image-caption">{{item.text}}</div>
+          </ng-container>
+        </ng-container>
+      </carousel>
+    </div>
+    <div class="house-card-text">
+      <h3 class="house-card-header">Utomhus</h3>
+      <ul>
+        <li>Huset har 2 altaner. Den på övre plan har utgång från både sovrum och TV-rum. Där finns möjlighet till
+          både sol, skugga och havsutsikt. Den nedre har utgång från vardagsrummet. Utanför det andra sovrummet
+          finns en liten balkong.
+        </li>
+        <li>Tomt runt huset</li>
+        <li>2 pooler finns på området, varav den ena precis utanför dörren</li>
+        <li>Uteförråd med cyklar, leksaker, golfbagar mm. (se utrustningslista nedan)</li>
+      </ul>
     </div>
   </div>
 </main>
-
-
-<!--
-<main class="flyin-grid">
-  <div class="flyin-grid__item card" style="padding: 2rem">
-    <div class="title text-center">
-      <h4>Om huset</h4>
-    </div>
-    <img src="assets/images/thai/husetutifranpool_stor.jpg" alt="huset"/>
-
-    <p>
-      Huset är nybyggt och välutrustat med plats för minst 6 personer, (173 kvm inklusive altan).
-      Det ligger i Laem Mae Phim, Rayong, 20 mil sydost om Bangkok. Det är en smakfullt inredd
-      tvåplansvilla med ljus och öppen planlösning och väl tilltagna gemensamhetsutrymmen.
-      Avståndet från havet är endast 200 m!
-    </p>
-    <p>Klicka <a routerLink="/galleri" routerLinkActive="active">här</a> för att se fler bilder.</p>
-  </div>
-  <div class="flyin-grid__item card" style="padding: 2rem">
-    <div class="title text-center">
-      <h4>Exteriör</h4>
-    </div>
-    <img src="assets/images/thai/husetutifranpool2_stor.jpg" alt="huset"/>
-    <ul>
-      <li>Tomt runt huset</li>
-      <li>2 pooler finns på området, varav den ena precis utanför dörren</li>
-      <li>Uteförråd med cyklar, leksaker, golfbagar mm. (se utrustningslista nedan)</li>
-    </ul>
-  </div>
-  <div class="flyin-grid__item card" style="padding: 2rem">
-    <div class="title text-center">
-      <h4>Interiör</h4>
-    </div>
-    <ul>
-      <li>Två sovrum, båda med dubbelsängar, garderober och varsitt helkaklat badrum</li>
-      <li>Vardagsrum med soffplats för 8 personer samt stereo med CD</li>
-      <li>Matplats med sittplats för 8 personer</li>
-      <li>TV-rum med platt-TV (Satellit-TV), DVD/stereo och 2 bekväma gästsängar</li>
-      <li>Fullt utrustat kök med spis, ugn, kyl/frys, diskmaskin, mikro, vattenkokare, kaffebryggare, brödrost mm.</li>
-      <li>Badrum och tvättmaskin</li>
-      <li>Luftkonditionering i alla rum</li>
-      <li>Bredband/ADSL finns men kostnad tillkommer</li>
-      <li>Huset har 2 altaner. Den på övre plan har utgång från både sovrum och TV-rum. Där finns möjlighet till
-        både sol, skugga och havsutsikt. Den nedre har utgång från vardagsrummet. Utanför det andra sovrummet
-        finns en liten balkong.
-      </li>
-    </ul>
-  </div>
-  <div class="flyin-grid__item card" style="padding: 2rem">
-    <div class="title text-center">
-      <h4>Utrustningslista</h4>
-    </div>
-    <ul>
-      <li>Sängkläder, handdukar strandhanddukar och köksutrustning för 6 personer</li>
-      <li>1 spjälsäng</li>
-      <li>2 cyklar</li>
-      <li>1 cykelbarnstol</li>
-      <li>1 barnstol</li>
-      <li>1 barn-/sittvagn</li>
-      <li>1 strykjärn och strykbräda</li>
-      <li>1 gästluftmadrass</li>
-      <li>Leksaker: 1 gåstol, Bobbycar, moped, blandade strandleksaker, miniverktygsset mm.</li>
-      <li>Några DVD-filmer och pocketböcker finns</li>
-    </ul>
-    <p>
-      Huset uthyres inkl sänglinnen, handdukar och slutstädning. Ej husdjur eller rökning inomhus, tack.
-    </p>
-  </div>
-</main>
--->

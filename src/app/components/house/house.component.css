@@ -1,15 +1,80 @@
 .image-caption {
   padding: 0;
-  width: 700px;
   height: 35px;
-  background-color: white;
-  color: #000;
+  background-color: #4a4a4a;
+  color: white;
   font-size: 20px;
   line-height: 35px;
   text-align: center;
 }
 
-.container {
+
+
+
+.house-inform-container {
+  color: #707070;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.house-inform-header {
+  text-align:center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.house-inform-text {
+  font-size: 1.1em;
+}
+
+.house-grid {
   display: flex;
-  justify-content: center;
+  margin: 0 -10px 60px -10px;
+}
+
+.house-grid-item {
+  flex: 1;
+  margin: 0 10px 10px;
+}
+
+.house-card {
+  background-color: white;
+  color: hsl(210, 15%, 20%);
+  box-shadow: 0.1em 0.3em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.house-card-text {
+  padding: 0.5em 2em 1em 2em;
+}
+
+.house-card-img-left {
+  width: 50%;
+  float: left;
+}
+
+.house-card-textbox {
+  margin-left: 50%;
+}
+
+.pic {
+  position: relative;
+}
+
+.pic-header {
+  position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  text-shadow: 0 0 0.7rem rgba(0,0,0,0.2);
+}
+
+.house-card-header {
+  text-transform: uppercase;
+  font-family: Source Sans Pro,Arial;
 }
