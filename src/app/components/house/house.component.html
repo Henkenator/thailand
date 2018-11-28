@@ -14,11 +14,11 @@
 
 <main class="house-grid">
   <div class="house-grid-item house-card">
-    <div class="pic">
+    <div>
       <carousel>
         <ng-container *ngFor="let item of indoorImages;">
           <ng-container *carouselItem>
-            <img src="{{item.src}}" width="600px">
+            <img src="{{item.src}}" width="530px">
             <div class="image-caption">{{item.text}}</div>
           </ng-container>
         </ng-container>
@@ -38,10 +38,7 @@
         <li>Bredband/ADSL finns men kostnad tillkommer</li>
         <li>Sängkläder, handdukar strandhanddukar och köksutrustning för 6 personer</li>
         <li>1 spjälsäng</li>
-        <li>2 cyklar</li>
-        <li>1 cykelbarnstol</li>
         <li>1 barnstol</li>
-        <li>1 barn-/sittvagn</li>
         <li>1 strykjärn och strykbräda</li>
         <li>1 gästluftmadrass</li>
         <li>Leksaker: 1 gåstol, Bobbycar, moped, blandade strandleksaker, miniverktygsset mm.</li>
@@ -51,11 +48,11 @@
   </div>
 
   <div class="house-grid-item house-card">
-    <div class="pic">
+    <div>
       <carousel>
         <ng-container *ngFor="let item of outdoorImages;">
           <ng-container *carouselItem>
-            <img src="{{item.src}}" width="600px">
+            <img src="{{item.src}}" width="530px">
             <div class="image-caption">{{item.text}}</div>
           </ng-container>
         </ng-container>
@@ -70,7 +67,15 @@
         </li>
         <li>Tomt runt huset</li>
         <li>2 pooler finns på området, varav den ena precis utanför dörren</li>
-        <li>Uteförråd med cyklar, leksaker, golfbagar mm. (se utrustningslista nedan)</li>
+        <li>Uteförråd med:
+          <ul>
+            <li>2 cyklar</li>
+            <li>1 cykelbarnstol</li>
+            <li>1 barn-/sittvagn</li>
+            <li>leksaker</li>
+            <li>golfbagar mm</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
