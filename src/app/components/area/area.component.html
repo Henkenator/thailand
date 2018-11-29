@@ -1,99 +1,70 @@
-<div class="inform-container2">
-  <div class="inform-header">
-    <span>MAE PHIM BEACH</span>
-  </div>
-  <div class="inform-text" style="text-align:center;">
+<main class="area-grid">
+
+  <div class="area-grid-item">
+    <div class="area-inform-container">
+      <div class="area-inform-header">
+      <span>MAE PHIM BEACH</span>
+      </div>
+      <div class="area-inform-text">
     <span>
      En oupptäckt pärla vid kusten
     </span>
-  </div>
-</div>
-
-<main class="card-grid">
-  <div class="card-grid_item card">
-    <div class="card-img-left">
-      <iframe width="350" height="308" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      </div>
+    </div>
+    <div class="area-card">
+    <div class="pic">
+      <iframe width="530" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
               src="http://maps.google.se/maps/ms?ie=UTF8&amp;hl=sv&amp;msa=0&amp;msid=113372554778389088512.000469322c8f1933cfa66&amp;t=p&amp;ll=12.951029,101.524658&amp;spn=13.525032,23.203125&amp;output=embed"></iframe>
-
-    </div>
-
-    <div class="card-textbox">
-
-      <div class="card_text">
-        <p>
-          Bara 2 timmar från Bangkoks internationella flygplats ligger paradisstranden Mae Pim. Här finner
-          du bedårande sandständer och kristallklart vatten. Badorten är populär bland thailändarna som
-          kommer hit på helgerna, annars är här väldigt lugnt. Inga försäljare eller trängsel på stranden.
-        </p>
-        <h4>Många och prisvärda restauranger</h4>
-        <p>
-          Längs stranden finns ett 30-tal restauranger där du kan njuta av såväl genuin thailändsk mat som
-          rätter med internationell prägel. Många av restaurangerna har seafood som specialitet. Det är billigare
-          här jämfört med de stora turistorterna.
-        </p>
-        <p>
-          Här ligger Laem Mae Phim
-
-          Röd vimpel markerar Bangkok
-          Blå vimpel markerar Mae Phim
-        </p>
+      <div class="area-map-caption">
+        <span>Bangkok, röd markör</span>
+        <br>
+        <span>Mae Phim, blå markör</span>
       </div>
     </div>
-  </div>
-</main>
-
-
-<!--<main class="card-grid">
-  <div class="card-grid_item card">
-    <div class="card-img-left">
-      <img src="../../../assets/images/gallery/hus2.jpg" alt="hopp" style="width: 400px"/>
-
+    <div class="area-card-text">
+      <p>
+        Bara 2 timmar från Bangkoks internationella flygplats ligger paradisstranden Mae Pim. Här finner
+        du bedårande sandständer och kristallklart vatten. Badorten är populär bland thailändarna som
+        kommer hit på helgerna, annars är här väldigt lugnt. Inga försäljare eller trängsel på stranden.
+      </p>
+      <h4>Många och prisvärda restauranger</h4>
+      <p>
+        Längs stranden finns ett 30-tal restauranger där du kan njuta av såväl genuin thailändsk mat som
+        rätter med internationell prägel. Många av restaurangerna har seafood som specialitet. Det är billigare
+        här jämfört med de stora turistorterna.
+      </p>
     </div>
-
-    <div class="card-textbox">
-      <div class="card_title">
-        <h2>Mae Phim Beach</h2>
-      </div>
-      <div class="card_text">
-        <h4>En oupptäckt pärla vid kusten</h4>
-        <p>
-          Bara 2 timmar från Bangkoks internationella flygplats ligger paradisstranden Mae Pim. Här finner
-          du bedårande sandständer och kristallklart vatten. Badorten är populär bland thailändarna som
-          kommer hit på helgerna, annars är här väldigt lugnt. Inga försäljare eller trängsel på stranden.
-        </p>
-        <h4>Många och prisvärda restauranger</h4>
-        <p>
-          Längs stranden finns ett 30-tal restauranger där du kan njuta av såväl genuin thailändsk mat som
-          rätter med internationell prägel. Många av restaurangerna har seafood som specialitet. Det är billigare
-          här jämfört med de stora turistorterna.
-        </p>
-      </div>
     </div>
   </div>
-</main>-->
 
-<div class="inform-container2">
-  <div class="inform-header">
-    <span>BLUE MANGO</span>
-  </div>
-  <div class="inform-text">
+  <div class="area-grid-item">
+    <div class="area-inform-container">
+      <div class="area-inform-header">
+        <span>BLUE MANGO</span>
+      </div>
+      <div class="area-inform-text">
     <span>
-      Huset ligger i området Blue Mango som innefattar cirka 50 hus. Det är ett barnvänligt och
+      Ett lugnt och strandnära område i Mae Phim
+    </span>
+      </div>
+    </div>
+    <div class="area-card">
+      <div>
+        <carousel>
+          <ng-container *ngFor="let item of areaImages">
+            <ng-container *carouselItem>
+              <img src="{{item.src}}" width="530px">
+              <div class="area-image-caption">{{item.text}}</div>
+            </ng-container>
+          </ng-container>
+        </carousel>
+      </div>
+      <div class="area-card-text">
+        <p>
+          Huset ligger i området Blue Mango som innefattar cirka 50 hus. Det är ett barnvänligt och
           lugnt område där majoriteten av de boende är svenskar. Inne på området finns en serviceorganisation som erbjuder
           bokning av transporter, biluthyrning, golf, utflykter etc. Området är bevakat.
-    </span>
-  </div>
-</div>
-
-<main class="card-grid">
-  <div class="card-grid_item card">
-    <div class="card-img-left">
-      <img src="../../../assets/images/house/pool2.jpg" alt="pool" style="width: 400px"/>
-    </div>
-
-    <div class="card-textbox">
-
-      <div class="card_text">
+        </p>
         <h4>Två swimmingpooler</h4>
         <p>
           Det finns två gemensamma pooler varav den ena ligger precis utanför dörren. Temperaturen i vattnet är normalt
@@ -113,4 +84,5 @@
       </div>
     </div>
   </div>
+
 </main>
