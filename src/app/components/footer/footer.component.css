@@ -1,0 +1,13 @@
+.page-footer {
+  background-color: #454545;
+  color: #c7c7c7;
+  padding: 1rem;
+  box-shadow: 0 0 5px #c9c7c3;
+}
+.page-footer__inner {
+  margin: 0 auto;
+  max-width: 1080px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
