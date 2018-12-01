@@ -14,7 +14,8 @@ html {
   --light-gray-brown: #f5f0eb;
   --brown-text: #707070;
   --green: #1d9886;
-  --red: #db4857;;
+  --red: #db4857;
+  --gray-shadow: #c7c7c7;
 }
 
 :root {
