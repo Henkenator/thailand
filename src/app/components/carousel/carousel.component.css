@@ -1,5 +1,6 @@
 .carousel-wrapper {
   overflow: hidden;
+
 }
 .carousel {
   list-style: none;
@@ -10,3 +11,43 @@
 .carousel-inner {
   display: flex;
 }
+
+.carousel-item {
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 6000px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+}
+.control-container {
+  display: flex;
+  justify-content: center;
+  background-color: #4a4a4a;
+  padding-bottom: 0.5em
+}
+button {
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  padding: 0.3em 0.7em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.slide-info {
+  color: white; padding-top: 0.3em;
+}
+

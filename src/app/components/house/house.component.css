@@ -1,11 +1,15 @@
-.area-image-caption {
+.house-image-caption {
   padding: 0;
-  height: 35px;
   background-color: #4a4a4a;
   color: white;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 1em;
+  padding: 0.2em;
   text-align: center;
+  display: block;
+}
+
+.house-carousel-background {
+  background-color: #4a4a4a;
 }
 
 .house-inform-container {

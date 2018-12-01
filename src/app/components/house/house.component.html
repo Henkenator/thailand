@@ -14,12 +14,12 @@
 
 <main class="house-grid">
   <div class="house-grid-item house-card">
-    <div>
+    <div class="house-carousel-background">
       <carousel>
         <ng-container *ngFor="let item of indoorImages;">
           <ng-container *carouselItem>
             <img src="{{item.src}}" width="530px">
-            <div class="image-caption">{{item.text}}</div>
+            <div class="house-image-caption">{{item.text}}</div>
           </ng-container>
         </ng-container>
       </carousel>
@@ -48,12 +48,12 @@
   </div>
 
   <div class="house-grid-item house-card">
-    <div>
+    <div class="house-carousel-background">
       <carousel>
         <ng-container *ngFor="let item of outdoorImages;">
           <ng-container *carouselItem>
             <img src="{{item.src}}" width="530px">
-            <div class="image-caption">{{item.text}}</div>
+            <div class="house-image-caption">{{item.text}}</div>
           </ng-container>
         </ng-container>
       </carousel>
