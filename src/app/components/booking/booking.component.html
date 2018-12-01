@@ -9,21 +9,14 @@
       Förfrågan kan sedan skickas till oss via nedanstående formulär. Vi återkommer till dig
       så fort vi kan.
     </p>
-    <p>
-      Om så önskas fixar vi en taxi som hämtar på flygplatsen så att du bekvämt kommer hela
-      vägen fram till dörren. På plats möts du upp av vår partner som överlämnar nyckel och
-      visar dig runt i huset samt ger en genomgång av hur AC med mera fungerar. Du får även
-      telefonnummer till taxichaufförer och annan servicepersonal samt tips på bra guider i
-      området.
-    </p>
   </div>
 </div>
 
 <main class="booking-grid">
 
 
-  <div class="card" style="padding: 2rem; background-color: #1d9886; width: 320px">
-    <div class="form-title text-center">
+  <div class="booking-card booking-form-item">
+    <div class="booking-form-title text-center">
       <h4>Bokningsformulär</h4>
     </div>
 
@@ -112,9 +105,10 @@
       </div>
     </form>
   </div>
-  <div class="card booking-item" style="padding: 2rem">
 
-    <div class="title text-center">
+  <div class="booking-card booking-item">
+
+    <div class="booking-title">
       <h4>Priser</h4>
     </div>
     <ul>
@@ -139,117 +133,54 @@
       <li>Vi hyr ut veckovis med början på lördagar</li>
 
     </ul>
-    <h4>Övrigt</h4>
+
+  </div>
+
+  <div class="booking-card booking-item">
+
+    <div class="booking-title">
+      <h4>Övrigt</h4>
+    </div>
+    <p>
+      Om så önskas fixar vi en taxi som hämtar på flygplatsen så att du bekvämt kommer hela
+      vägen fram till dörren. På plats möts du upp av vår partner som överlämnar nyckel och
+      visar dig runt i huset samt ger en genomgång av hur AC med mera fungerar. Du får även
+      telefonnummer till taxichaufförer och annan servicepersonal samt tips på bra guider i
+      området.
+    </p>
+
     <ul>
-      <li>Inga husdjur</li>
+      <li>Inga husdjur tillåtna</li>
       <li>Rökning sker utomhus</li>
     </ul>
 
   </div>
 
 
-  <div class="card booking-item" style="padding: 2rem">
-    <iframe height="400" width="400"
+  <div class="booking-card booking-item">
+
+    <div class="booking-title">
+      <h4>Kontakta oss</h4>
+    </div>
+    <p>
+      <span>Välkommen att kontakta oss om ni har frågor eller veta mer om huset.</span>
+      <br>
+      <br>
+      <span>Michael Claesson</span>
+      <br>
+      <span>Tel:070-536 83 16</span>
+      <br>
+      <span>Email:info@hyraithailand.se</span>
+    </p>
+
+  </div>
+
+
+  <div class="booking-card-form booking-item">
+    <iframe height="350" width="350"
             src="https://calendar.google.com/calendar/embed?title=Bokningskalender&showPrint=0&showTabs=0&showCalendars=0&showTz=0&height=300&wkst=2&hl=sv&bgcolor=%23ffffff&src=info@hyraithailand.se&color=%232952A3&ctz=Europe/Stockholm">
       (Om du inte ser en kalender här, uppdatera din browser eller byt till en annan)
     </iframe>
   </div>
-
-
-
-</main>
-
-<main>
-
-
-  <!--<div class="card" style="padding: 2rem; background-color: #1d9886; width: 320px">
-    <div class="form-title text-center">
-      <h4>Bokningsformulär</h4>
-    </div>
-
-    <form [formGroup]="bookingForm" (submit)="onSubmit()">
-
-      <div class="form-control">
-        <div class="label">
-          <label for="name">
-            För- och efternamn
-          </label>
-        </div>
-        <div>
-          <input type="text" id="name" formControlName="name" size="30">
-        </div>
-      </div>
-
-      <div class="form-control">
-        <div class="label">
-          <label for="address">
-            Adress
-          </label>
-        </div>
-        <div>
-          <input type="text" id="address" formControlName="address" size="30">
-        </div>
-      </div>
-
-      <div class="form-control">
-        <div class="label">
-          <label for="zipCode">
-            Postnummer
-          </label>
-        </div>
-        <div>
-          <input type="text" id="zipCode" formControlName="zipCode" size="30">
-        </div>
-      </div>
-
-      <div class="form-control">
-        <div class="label">
-          <label for="city">
-            Stad
-          </label>
-        </div>
-        <div>
-          <input type="text" id="city" formControlName="city" size="30">
-        </div>
-      </div>
-
-      <div class="form-control">
-        <div class="label">
-          <label for="phone">
-            Telefonnummer
-          </label>
-        </div>
-        <div>
-          <input type="text" id="phone" formControlName="phone" size="30">
-        </div>
-      </div>
-
-      <div class="form-control">
-        <div class="label">
-          <label for="email">
-            Email
-          </label>
-        </div>
-        <div>
-          <input type="text" id="email" formControlName="email" size="30">
-        </div>
-      </div>
-
-      <div class="form-control">
-        <div class="label">
-          <label for="message">
-            Meddelande
-          </label>
-        </div>
-        <div>
-          <textarea type="text" id="message" formControlName="message" rows="4" cols="29">
-          </textarea>
-        </div>
-      </div>
-      <div style="overflow: auto;">
-        <button class="submit-button">Skicka</button>
-      </div>
-    </form>
-  </div>-->
 
 </main>

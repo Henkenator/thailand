@@ -1,15 +1,39 @@
 .booking-grid {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -10px 60px -10px;
   /*margin*/
 }
 
 .booking-item {
   flex: 1;
-  margin-left: 1.2em;
+  margin: 0 10px 10px;
+  /*margin-left: 1.2em;
   margin-right: 1.2em;
-  margin-bottom: 2.4em;
+  margin-bottom: 2.4em;*/
   /*max-width: 1080px;*/
+}
+
+.booking-card {
+  margin-bottom: 1em;
+  padding: 0.5em 2em 1em 2em;
+  background-color: white;
+  color: hsl(210, 15%, 20%);
+  box-shadow: 0.1em 0.3em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.booking-card-form {
+  margin-bottom: 1em;
+  background-color: white;
+  color: hsl(210, 15%, 20%);
+  box-shadow: 0.1em 0.3em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-item {
+  margin: 0 10px 10px;
+  padding: 2rem;
+  background-color: #1d9886;
+  width: 320px;
 }
 
 .form-control {
@@ -22,12 +46,17 @@
   padding-bottom: 0.15em;
 }
 
-.form-title > h4 {
+.booking-form-title > h4 {
   color: white;
   font-family: Helvetica;
   text-transform: uppercase;
 }
 
+.booking-title {
+  color: var(--dark-text);
+  font-family: Helvetica;
+  text-transform: uppercase;
+}
 
 
 .submit-button {
