@@ -157,6 +157,15 @@
 
   }
 
+  /*
+  .active > div > img*/
+  .active > div > span
+  {
+    color: var(--orange);
+    fill: var(--orange);
+
+  }
+
   .nav-links__icon {
     height: 1.2em;
     width: 1.2em;
@@ -164,7 +173,7 @@
   }
 
   .icon {
-    fill: var(--dark-text);
+    /*fill: var(--dark-text);*/
   }
   .icon:active,
   .icon:hover,

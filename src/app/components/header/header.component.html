@@ -19,7 +19,7 @@
         <div class="menu-dropdown">
           <ul class="nav-menu">
             <li>
-              <a routerLink="" routerLinkActive="active" (click)="toggle()">
+              <a routerLink="" routerLinkActive="active" (click)="toggle()" [routerLinkActiveOptions]="{exact: true}">
                 <div><img src="assets/svg/star.svg" class="nav-links__icon"/></div>
                 <div><span>Start</span></div>
               </a>
