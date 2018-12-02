@@ -78,3 +78,6 @@ a:visited {
   display: block;
 }
 
+.relative-position {
+  position: relative;
+}
