@@ -1,10 +1,13 @@
 .area-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 -10px 60px -10px;
 }
 
 .area-grid-item {
   flex: 1;
+  max-width: 530px;
   margin: 0 10px 10px;
 }
 
