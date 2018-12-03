@@ -96,9 +96,9 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-rows: auto;
-  grid-template-columns: [first] 320px [line2] auto [line3] 350px [end];
+  grid-template-columns: [first] 320px [line2] 350px [line3] auto [end];
   grid-template-areas:
-    "form prices calendar "
+    "form calendar prices"
     "form misc contact"
 
   /*margin: 0 -10px 60px -10px;*/
