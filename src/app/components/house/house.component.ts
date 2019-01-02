@@ -9,21 +9,21 @@ export class HouseComponent implements OnInit {
 
   indoorImages = [
 
+    { text: 'Vardagsrum', src: '../../../assets/images/house/vardagsrum1.jpg'},
+    { text: 'Vardagsrum', src: '../../../assets/images/house/vardagsrum2.jpg'},
+
     { text: 'Matsal', src: '../../../assets/images/house/matsal1.jpg'},
     { text: 'Matsal', src: '../../../assets/images/house/matsal2.jpg'},
 
     { text: 'Kök', src: '../../../assets/images/house/kok.jpg'},
 
-    { text: 'Sovrum', src: '../../../assets/images/house/sovrum1.jpg'},
-    { text: 'Sovrum', src: '../../../assets/images/house/sovrum2.jpg'},
-    { text: 'Sovrum', src: '../../../assets/images/house/sovrum3.jpg'},
-    { text: 'Sovrum', src: '../../../assets/images/house/sovrum4.jpg'},
+    { text: 'Sovrum 1', src: '../../../assets/images/house/sovrum3.jpg'},
+    { text: 'Sovrum 2', src: '../../../assets/images/house/sovrum2.jpg'},
+    { text: 'Sovrum 2', src: '../../../assets/images/house/sovrum4.jpg'},
 
     { text: 'Tv-rum', src: '../../../assets/images/house/tv-rum1.jpg'},
     { text: 'Tv-rum', src: '../../../assets/images/house/tv-rum2.jpg'},
 
-    { text: 'Vardagsrum', src: '../../../assets/images/house/vardagsrum1.jpg'},
-    { text: 'Vardagsrum', src: '../../../assets/images/house/vardagsrum2.jpg'},
   ];
 
   outdoorImages = [
