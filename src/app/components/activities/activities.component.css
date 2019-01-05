@@ -34,8 +34,7 @@ img {
 
 .activities-island-grid-item {
   flex: 1;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 250px;
   margin: 0 10px 20px;
 }
 
@@ -53,6 +52,10 @@ img {
 
 .activities-card-text {
   padding: 0.5em 2em 1em 2em;
+}
+
+.island-text {
+  margin-top: 5px;
 }
 
 .activities-card-img-left {
@@ -84,4 +87,5 @@ img {
 .activities-card-header {
   text-transform: uppercase;
   font-family: Source Sans Pro,Arial;
+  margin-bottom: 0px;
 }
