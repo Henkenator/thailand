@@ -19,11 +19,17 @@
 
 .area-card-text {
   padding: 0.5em 2em 1em 2em;
+  margin-top: 15px;
+}
+
+.area-card-text > p{
+  margin-top: 0px;
 }
 
 .area-card-text > h4 {
   text-transform: uppercase;
   font-family: Source Sans Pro,Arial;
+  margin-bottom: 5px;
 }
 
 .area-card-header {
