@@ -30,6 +30,13 @@
 
 .header-row {
   display: flex;
+  margin: 0px 10px;
+}
+
+@media (min-width:1090px) {
+  .header-row {
+    margin: 0px 0px;
+  }
 }
 
 .header-row-item1 {
