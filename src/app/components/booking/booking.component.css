@@ -3,7 +3,16 @@
   color: #707070;
   margin-top: 2em;
   margin-bottom: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: left;
+}
+
+@media (min-width:1090px) {
+  .booking-inform-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .booking-inform-header {

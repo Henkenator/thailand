@@ -6,7 +6,16 @@ img {
   color: #707070;
   margin-top: 2em;
   margin-bottom: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: left;
+}
+
+@media (min-width:1090px) {
+  .activities-inform-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .activities-inform-header {
