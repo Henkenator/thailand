@@ -45,7 +45,7 @@
   /*margin: 0 10px 10px;*/
   padding: 2rem;
   background-color: #1d9886;
-  width: 320px;
+  width: 350px;
   /*height: 630px;*/
 }
 
@@ -124,12 +124,33 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-rows: auto;
-  grid-template-columns: [first] 320px [line2] 350px [line3] auto [end];
+  justify-items: center;
+  grid-template-columns: [first] auto [end];
   grid-template-areas:
-    "form calendar prices"
-    "form misc contact"
+    "prices"
+    "calendar"
+    "form"
+    "contact"
+    "misc"
+}
 
-  /*margin: 0 -10px 60px -10px;*/
+@media only screen and (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: [first] auto [line2] auto [end];
+    grid-template-areas:
+      "calendar prices"
+      "form contact"
+      "form misc"
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .grid-container {
+    grid-template-columns: [first] 350px [line2] 350px [line3] auto [end];
+    grid-template-areas:
+      "form calendar prices"
+      "form misc contact"
+  }
 }
 
 .item-form {
