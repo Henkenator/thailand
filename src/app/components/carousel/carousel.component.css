@@ -22,13 +22,6 @@ ul {
   width: 6000px;
 }
 
-.carousel-wrapper {
-  overflow: hidden;
-}
-
-.carousel-inner {
-  display: flex;
-}
 .control-container {
   display: flex;
   justify-content: center;
