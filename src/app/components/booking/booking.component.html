@@ -25,7 +25,7 @@
       <div class="form-control">
         <div class="label">
           <label for="name">
-            För- och efternamn
+            För- och efternamn*
           </label>
         </div>
         <div>
@@ -36,7 +36,7 @@
       <div class="form-control">
         <div class="label">
           <label for="address">
-            Adress
+            Adress*
           </label>
         </div>
         <div>
@@ -47,7 +47,7 @@
       <div class="form-control">
         <div class="label">
           <label for="zipCode">
-            Postnummer
+            Postnummer*
           </label>
         </div>
         <div>
@@ -58,7 +58,7 @@
       <div class="form-control">
         <div class="label">
           <label for="city">
-            Stad
+            Stad*
           </label>
         </div>
         <div>
@@ -80,7 +80,7 @@
       <div class="form-control">
         <div class="label">
           <label for="email">
-            Email
+            Email*
           </label>
         </div>
         <div>
@@ -91,17 +91,22 @@
       <div class="form-control">
         <div class="label">
           <label for="message">
-            Meddelande
+            Meddelande*
           </label>
         </div>
         <div>
-          <textarea type="text" id="message" formControlName="message" rows="4" cols="29">
+          <textarea type="text" id="message" formControlName="message" rows="4" cols="29" placeholder="Ange önskad hyresperiod">
           </textarea>
           <!--<input type="text" id="message" formControlName="message" size="30">-->
         </div>
       </div>
+
+      <div *ngIf="feedbackText" class="feedback-text">
+        {{feedbackText}}
+      </div>
+
       <div style="overflow: auto;">
-        <button class="submit-button">Skicka</button>
+        <button [disabled]="bookingForm.invalid" class="submit-button" [ngClass]="{'btn-inactive': bookingForm.invalid}">Skicka</button>
       </div>
     </form>
   </div>
@@ -168,7 +173,7 @@
       <h4>Kontakta oss</h4>
     </div>
     <p>
-      <span>Välkommen att kontakta oss om ni har frågor eller veta mer om huset.</span>
+      <span>Välkommen att kontakta oss om ni har frågor eller vill veta mer om huset.</span>
       <br>
       <br>
       <span>Michael Claesson</span>

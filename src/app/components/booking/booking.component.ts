@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
@@ -8,9 +8,12 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class BookingComponent implements OnInit {
 
- bookingForm: FormGroup;
+  bookingForm: FormGroup;
+  feedbackText: string;
+  // feedbackText = 'Tack för din förfrågan! Vi återkommer så snart som möjligt med svar.';
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {
+  }
 
   ngOnInit() {
     this.createForm();
@@ -31,5 +34,6 @@ export class BookingComponent implements OnInit {
   onSubmit() {
     console.log(this.bookingForm.value);
     this.createForm();
+    this.feedbackText = 'Tack för din förfrågan! Vi återkommer så snart som möjligt med svar.';
   }
 }
