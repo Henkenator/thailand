@@ -4,8 +4,9 @@ img {
 
 .start-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  /*justify-content: center;*/
   /*margin: 0 -10px 40px -10px;*/
   margin: 0px 10px 40px 10px;
 }
@@ -16,10 +17,8 @@ img {
   }
 }
 
-
 .start-grid-item {
   flex: 1;
-  min-width: 430px;
 }
 
 .start-links-grid {
@@ -152,6 +151,7 @@ img {
 
 .ellipseDiv
 {
+  display: none;
   height: 100px;
   width: 140px;
   border-radius: 49%;
@@ -162,6 +162,13 @@ img {
   right: 2em;
   box-shadow: 0 10px 7px rgba(0,0,0,0.3);
 }
+
+@media (min-width:500px) {
+  .ellipseDiv {
+    display: block;
+  }
+}
+
 .ellipse-text {
   color: var(--orange);
   position: absolute;
