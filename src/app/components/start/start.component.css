@@ -37,9 +37,9 @@ img {
 
 @media (min-width:1090px) {
 
-  .start-links-grid-item {
+  /*.start-links-grid-item {
     margin: 0 10px
-  }
+  }*/
 
   .start-links-grid-item:first-child {
     margin-left: 0px;
