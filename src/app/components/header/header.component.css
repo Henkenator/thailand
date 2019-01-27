@@ -83,6 +83,7 @@
   display: block;
   content: "\2261";
   text-indent: 0;
+  color: var(--dark-text);
 }
 
 .menu-dropdown {
