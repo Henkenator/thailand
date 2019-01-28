@@ -10,8 +10,6 @@
   padding-top: 0.3em;
   font-family: Sansita, serif;
   letter-spacing: 0.03em;
-  /*color: var(--orange);*/
-  /*color: var(--brown-text);*/
   color: var(--dark-text);
   text-transform: uppercase;
   text-shadow: 0.5px 0.5px #148;
@@ -54,11 +52,6 @@
 .nav-line2 {
   border-bottom: 20px solid var(--gray-brown);
   box-shadow: 0 0 1px var(--gray-shadow);
-}
-
-
-.menu {
-  /*position: relative;*/
 }
 
 .menu-toggle {
@@ -106,7 +99,6 @@
   padding-left: 0;
   border: 1px solid #ccc;
   list-style: none;
-  /*background-color: var(--dark-gray);*/
   background-color: white;
 }
 
@@ -121,14 +113,15 @@
   color: var(--dark-text);
   font-weight: bold;
   text-transform: uppercase;
-  /*font-family: 'Tajawal', sans-serif;*/
 }
 
 .nav-links__icon {
   display: none;
 }
 
-
+.nav-links__icon-active {
+  display: none;
+}
 
 @media (min-width: 45em) {
   .menu-toggle {
@@ -157,40 +150,46 @@
     margin-bottom: 0.4em;
   }
 
-  .nav-menu > li > a:active,
-  .nav-menu > li > a:hover,
-  .nav-menu > li > a:focus
-  {
-    color: var(--orange);
-    fill: var(--orange);
-
-  }
-
-  /*
-  .active > div > img*/
-  .active > div > span
-  {
-    color: var(--orange);
-    fill: var(--orange);
-
-  }
-
   .nav-links__icon {
     height: 1.2em;
     width: 1.2em;
     display: inline-block;
   }
 
-  .icon {
-    /*fill: var(--dark-text);*/
+  .nav-links__icon-active {
+    height: 1.2em;
+    width: 1.2em;
+    display: none;
   }
-  .icon:active,
-  .icon:hover,
-  .icon:focus
+
+  .active > div > span
   {
-    /*fill: var(--orange);*/
-  }
-  .highlightedIcon {
+    color: var(--orange);
     fill: var(--orange);
+  }
+
+  .active .nav-links__icon-active {
+    display: inline-block;
+  }
+
+  .active .nav-links__icon {
+    display: none;
+  }
+
+  .nav-menu > li > a:hover,
+  .nav-menu > li > a:focus
+  {
+    color: var(--orange);
+    fill: var(--orange);
+  }
+
+  li:hover .nav-links__icon-active,
+  li:focus .nav-links__icon-active {
+    display: inline-block;
+  }
+
+  li:hover .nav-links__icon,
+  li:focus .nav-links__icon {
+    display: none;
   }
 }
