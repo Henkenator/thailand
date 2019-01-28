@@ -192,4 +192,29 @@
   li:focus .nav-links__icon {
     display: none;
   }
+
+  .arrow-container {
+    position: relative;
+  }
+
+  .arrow {
+    display: none;
+    border-width: 0 11px 9px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--orange);
+    border-left-color: transparent;
+    bottom: -20px;
+    width: 0;
+    left: calc(50% - 11px);
+    position: absolute;
+    margin: auto;
+  }
+
+  .active .arrow {
+    display: inline-block;
+  }
 }
+
+
