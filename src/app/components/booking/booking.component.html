@@ -20,8 +20,184 @@
       <h4>Bokningsformulär</h4>
     </div>
 
-    <form [formGroup]="bookingForm" (submit)="onSubmit()">
+    <form ngNoForm id="gform" class="gform" method="POST"
+          data-email="example@email.com"
+          action="https://script.google.com/macros/s/AKfycbx9pvk6NNF5PHVbuD64Rygi4HB_9DNyMHx-z0PTFw-Ikjcsr6e8/exec">
+      <div class="form-control">
+        <div class="label">
+          <label for="name">
+            För- och efternamn*
+          </label>
+        </div>
+        <div>
+          <input type="text" id="name" name="name" class="name" style="width: 285px" required>
+        </div>
+      </div>
 
+      <div class="form-control">
+        <div class="label">
+          <label for="address">
+            Adress*
+          </label>
+        </div>
+        <div>
+          <input type="text" id="address" name="address" class="address" style="width: 285px" required>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="label">
+          <label for="zipCode">
+            Postnummer*
+          </label>
+        </div>
+        <div>
+          <input type="text" id="zipCode" name="zipCode" class="zipCode" style="width: 285px" required>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="label">
+          <label for="city">
+            Stad*
+          </label>
+        </div>
+        <div>
+          <input type="text" id="city" name="city" class="city" style="width: 285px" required>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="label">
+          <label for="phone">
+            Telefonnummer
+          </label>
+        </div>
+        <div>
+          <input type="text" id="phone" name="phone" class="phone" style="width: 285px">
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="label">
+          <label for="email">
+            Email*
+          </label>
+        </div>
+        <div>
+          <input type="text" id="email" name="email" class="email" style="width: 285px" required>
+          <span class="email-invalid" style="display:none; margin-top: 5px">
+          Måste vara en korrekt mailadress</span>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="label">
+          <label for="message">
+            Meddelande*
+          </label>
+        </div>
+        <div>
+          <textarea type="text" id="message" name="message" class="message" rows="5" style="width: 285px" placeholder="Ange önskad hyresperiod" required></textarea>
+        </div>
+      </div>
+
+      <div class="feedback-text successful-submit" style="display:none">
+        Tack för din förfrågan! Vi återkommer så snart som möjligt med svar.
+      </div>
+
+      <div class="feedback-error failed-submit" style="display:none">
+        Oj, något gick snett. Ladda om sidan och prova igen om en stund, eller maila din förfrågan direkt till info@hyraithailand.se
+      </div>
+
+      <div style="overflow: auto;">
+        <button class="submit-button">Skicka</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="item-prices booking-card booking-item">
+
+    <div class="booking-title">
+      <h4>Priser</h4>
+    </div>
+    <ul>
+      <li>Högsäsong: 1/11-10/4</li>
+      <ul>
+        <li>1 vecka: 6 000 kr</li>
+        <li>2 veckor: 10 000 kr</li>
+        <li>3 veckor: 14 000 kr</li>
+      </ul>
+
+      <li>Lågsäsong: 11/4-31/10</li>
+      <ul>
+        <li>1 vecka: 4 000 kr</li>
+        <li>2 veckor: 7 500 kr</li>
+        <li>3 veckor: 11 000 kr</li>
+      </ul>
+
+      <li>Slutstädning ingår i priset</li>
+      <li>El och vatten ingår upp till 2500 Bath/månad (normalförbrukning) därefter betalas el och vatten efter
+        förbrukning
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="item-calendar booking-card-form booking-item">
+    <iframe height="350" width="350"
+            src="https://calendar.google.com/calendar/embed?title=Bokningskalender&showPrint=0&showTabs=0&showCalendars=0&showTz=0&height=300&wkst=2&hl=sv&bgcolor=%23ffffff&src=info@hyraithailand.se&color=%232952A3&ctz=Europe/Stockholm">
+      (Om du inte ser en kalender här, uppdatera din browser eller byt till en annan)
+    </iframe>
+  </div>
+
+  <div class="item-misc booking-card booking-item">
+
+    <div class="booking-title">
+      <h4>Övrigt</h4>
+    </div>
+    <p>
+      Om så önskas fixar vi en taxi som hämtar på flygplatsen så att du bekvämt kommer hela
+      vägen fram till dörren. På plats möts du upp av vår partner som överlämnar nyckel och
+      visar dig runt i huset samt ger en genomgång av hur AC med mera fungerar. Du får även
+      telefonnummer till taxichaufförer och annan servicepersonal samt tips på bra guider i
+      området.
+    </p>
+
+    <ul>
+      <li>Inga husdjur tillåtna</li>
+      <li>Rökning sker utomhus</li>
+    </ul>
+
+  </div>
+
+  <div class="item-contact booking-card booking-item">
+
+    <div class="booking-title">
+      <h4>Kontakta oss</h4>
+    </div>
+    <p>
+      <span>Är ni nyfikna på huset och området och vill veta mer, eller om ni har några andra frågor, tveka inte att höra av er till oss!</span>
+      <br>
+      <br>
+      <span>Michael Claesson</span>
+      <br>
+      <span>Tel: 070-536 83 16</span>
+      <br>
+      <span>Mail: info@hyraithailand.se</span>
+    </p>
+
+  </div>
+</main>
+
+
+
+
+<!--
+<form [formGroup]="bookingForm" (submit)="onSubmit()" id="gform" class="gform" method="POST"
+          data-email="example@email.com"
+          action="https://script.google.com/macros/s/AKfycbx9pvk6NNF5PHVbuD64Rygi4HB_9DNyMHx-z0PTFw-Ikjcsr6e8/exec">
       <div class="form-control">
         <div class="label">
           <label for="name">
@@ -108,79 +284,4 @@
         <button [disabled]="bookingForm.invalid" class="submit-button" [ngClass]="{'btn-inactive': bookingForm.invalid}">Skicka</button>
       </div>
     </form>
-  </div>
-
-  <div class="item-prices booking-card booking-item">
-
-    <div class="booking-title">
-      <h4>Priser</h4>
-    </div>
-    <ul>
-      <li>Högsäsong: 1/11-10/4</li>
-      <ul>
-        <li>1 vecka: 6 000 kr</li>
-        <li>2 veckor: 10 000 kr</li>
-        <li>3 veckor: 14 000 kr</li>
-      </ul>
-
-      <li>Lågsäsong: 11/4-31/10</li>
-      <ul>
-        <li>1 vecka: 4 000 kr</li>
-        <li>2 veckor: 7 500 kr</li>
-        <li>3 veckor: 11 000 kr</li>
-      </ul>
-
-      <li>Slutstädning ingår i priset</li>
-      <li>El och vatten ingår upp till 2500 Bath/månad (normalförbrukning) därefter betalas el och vatten efter
-        förbrukning
-      </li>
-
-    </ul>
-
-  </div>
-
-  <div class="item-calendar booking-card-form booking-item">
-    <iframe height="350" width="350"
-            src="https://calendar.google.com/calendar/embed?title=Bokningskalender&showPrint=0&showTabs=0&showCalendars=0&showTz=0&height=300&wkst=2&hl=sv&bgcolor=%23ffffff&src=info@hyraithailand.se&color=%232952A3&ctz=Europe/Stockholm">
-      (Om du inte ser en kalender här, uppdatera din browser eller byt till en annan)
-    </iframe>
-  </div>
-
-  <div class="item-misc booking-card booking-item">
-
-    <div class="booking-title">
-      <h4>Övrigt</h4>
-    </div>
-    <p>
-      Om så önskas fixar vi en taxi som hämtar på flygplatsen så att du bekvämt kommer hela
-      vägen fram till dörren. På plats möts du upp av vår partner som överlämnar nyckel och
-      visar dig runt i huset samt ger en genomgång av hur AC med mera fungerar. Du får även
-      telefonnummer till taxichaufförer och annan servicepersonal samt tips på bra guider i
-      området.
-    </p>
-
-    <ul>
-      <li>Inga husdjur tillåtna</li>
-      <li>Rökning sker utomhus</li>
-    </ul>
-
-  </div>
-
-  <div class="item-contact booking-card booking-item">
-
-    <div class="booking-title">
-      <h4>Kontakta oss</h4>
-    </div>
-    <p>
-      <span>Är ni nyfikna på huset och området och vill veta mer, eller om ni har några andra frågor, tveka inte att höra av er till oss!</span>
-      <br>
-      <br>
-      <span>Michael Claesson</span>
-      <br>
-      <span>Tel: 070-536 83 16</span>
-      <br>
-      <span>Mail: info@hyraithailand.se</span>
-    </p>
-
-  </div>
-</main>
+-->
