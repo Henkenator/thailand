@@ -14,6 +14,7 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import {ReactiveFormsModule} from '@angular/forms';
 import {CarouselComponent, CarouselItemDirective, CarouselItemElement} from './components/carousel/carousel.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ImageHolderComponent } from './components/image-holder/image-holder.component';
 
 export const appRoutes: Routes = [
   {path: '', component: StartComponent},
@@ -37,7 +38,8 @@ export const appRoutes: Routes = [
     ActivitiesComponent,
     CarouselComponent,
     CarouselItemDirective,
-    CarouselItemElement
+    CarouselItemElement,
+    ImageHolderComponent
   ],
   imports: [
     BrowserModule,
