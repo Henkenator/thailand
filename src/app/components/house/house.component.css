@@ -48,8 +48,36 @@
 .house-grid-item {
   flex: 1;
   max-width: 530px;
+  /*width: 400px;*/
   margin: 0 10px 30px;
 }
+
+/*
+.car-img {
+  width:400px;
+
+}
+
+@media (min-width:600px) {
+  .house-grid-item {
+    width: 600px;
+  }
+
+  .car-img {
+    width: 600px;
+  }
+}
+*/
+/*
+@media (min-width:700px) {
+  .house-grid-item {
+    max-width: 600px;
+  }
+
+  .car-img {
+    max-width: 600px;
+  }
+}*/
 
 .house-card {
   background-color: white;
@@ -91,3 +119,4 @@
   text-transform: uppercase;
   font-family: Source Sans Pro,Arial;
 }
+
