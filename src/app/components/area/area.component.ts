@@ -35,30 +35,25 @@ export class AreaComponent implements OnInit {
 
   phimImages = [
 
-    { text: 'Strand', src: '../../../assets/images/area/maePhim/strand1.jpg'},
-    { text: 'Strand', src: '../../../assets/images/area/maePhim/strand2.jpg'},
-    { text: 'Strand', src: '../../../assets/images/area/maePhim/strand3.jpg'},
-    { text: 'Strand', src: '../../../assets/images/area/maePhim/strand4.jpg'},
-    { text: 'Strand', src: '../../../assets/images/area/maePhim/strand5.jpg'},
-    { text: 'Strand', src: '../../../assets/images/area/maePhim/strand6.jpg'},
+    { text: 'Mae Phim beach', src: '../../../assets/images/area/maePhim/strand1.jpg'},
+    { text: 'Mae Phim beach', src: '../../../assets/images/area/maePhim/strand2.jpg'},
+    { text: 'Mae Phim beach', src: '../../../assets/images/area/maePhim/strand3.jpg'},
+    { text: 'Mae Phim beach', src: '../../../assets/images/area/maePhim/strand5.jpg'},
+    { text: 'Ao Khai (Kungastranden)', src: '../../../assets/images/area/maePhim/strand4.jpg'},
+    { text: 'Ao Khai (Kungastranden)', src: '../../../assets/images/area/maePhim/strand6.jpg'},
 
-    { text: 'Mae Phim', src: '../../../assets/images/area/maePhim/maePhim1.jpg'},
+    { text: 'Strandnära restauranger', src: '../../../assets/images/area/maePhim/maePhim1.jpg'},
     { text: 'Mae Phim', src: '../../../assets/images/area/maePhim/maePhim2.jpg'},
-    { text: 'Mae Phim', src: '../../../assets/images/area/maePhim/maePhim3.jpg'},
+    { text: 'Restauranger', src: '../../../assets/images/area/maePhim/maePhim3.jpg'},
     { text: 'Mae Phim', src: '../../../assets/images/area/maePhim/maePhim4.jpg'},
 
     { text: 'Torget i Mae Phim', src: '../../../assets/images/area/maePhim/torg1.jpg'},
     { text: 'Torget i Mae Phim', src: '../../../assets/images/area/maePhim/torg2.jpg'},
 
-    { text: 'En stormig dag med högt vatten', src: '../../../assets/images/area/maePhim/storm.jpg'},
-
-    { text: 'Mat', src: '../../../assets/images/area/maePhim/mat1.jpg'},
-    { text: 'Mat', src: '../../../assets/images/area/maePhim/mat2.jpg'},
-    { text: 'Mat', src: '../../../assets/images/area/maePhim/mat3.jpg'},
-    { text: 'Mat', src: '../../../assets/images/area/maePhim/mat4.jpg'},
-    { text: 'Mat', src: '../../../assets/images/area/maePhim/mat5.jpg'},
-    { text: 'Mat', src: '../../../assets/images/area/maePhim/mat6.jpg'},
-    // { text: 'Mat', src: '../../../assets/images/area/maePhim/mat7.jpg'},
+    { text: 'Skaldjurstallrik', src: '../../../assets/images/area/maePhim/mat1.jpg'},
+    { text: 'Stekta räkor med vitlök', src: '../../../assets/images/area/maePhim/mat3.jpg'},
+    { text: 'Pad Thai och Papayasallad', src: '../../../assets/images/area/maePhim/mat2.jpg'},
+    { text: 'Färsk frukt från lokala fruktståndet', src: '../../../assets/images/area/maePhim/mat4.jpg'}
   ];
 
 }
