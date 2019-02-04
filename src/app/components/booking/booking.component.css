@@ -185,6 +185,13 @@ form button[disabled]:hover {
   }
 }
 
+@media (min-width: 1090px) {
+  .grid-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .item-form {
   grid-area: form;
 }
