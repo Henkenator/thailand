@@ -15,3 +15,17 @@ button {
   font-size: 16px;
   text-transform: uppercase;
 }
+
+.slide-info {
+  color: white; padding-top: 0.3em;
+}
+
+.house-image-caption {
+  padding: 0;
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 1em;
+  padding: 0.2em;
+  text-align: center;
+  display: block;
+}

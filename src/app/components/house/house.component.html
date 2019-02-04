@@ -13,7 +13,7 @@
 </div>
 
 
-<!--
+
 <main class="house-grid">
   <div class="house-grid-item house-card">
     <div class="house-carousel-background">
@@ -72,85 +72,3 @@
     </div>
   </div>
 </main>
-
--->
-
-
-
-
-
-<main class="house-grid">
-  <div class="house-grid-item house-card">
-    <div class="house-carousel-background">
-      <carousel>
-        <ng-container *ngFor="let item of indoorImages;">
-          <ng-container *carouselItem>
-            <img src="{{item.src}}" width="530">
-            <!--<img src="{{item.src}}" class="car-img">-->
-            <div class="house-image-caption">{{item.text}}</div>
-          </ng-container>
-        </ng-container>
-      </carousel>
-    </div>
-    <div class="house-card-text">
-      <h3 class="house-card-header">Inomhus</h3>
-      <p>
-        När du kommer in i huset möts du av ett stort vardagsrum med soffgrupp och matbord för
-        8 personer. Här kan man lyssna på musik, spela ett av sällskapsspelen som finns eller
-        läsa en av böckerna från bokhyllan. På entréplan hittar du också ett fullt utrustat kök
-        med spis, ugn, kyl/frys, diskmaskin, mikro, vattenkokare, kaffebryggare, brödrost mm.
-        Bakom köket finns tvättstuga med tvättmaskin och torkställning. I anslutning till
-        vardagsrummet finns även en gästtoalett.
-      </p>
-      <p>
-        En trappa upp finns två sovrum, båda med dubbelsängar, garderober och helkaklade badrum.
-        Här finns TV-rum med hemmabiosystem och två bekväma fåtöljer. Dessa fåtöljer görs lätt
-        om till gästsängar.
-      </p>
-      <h3>Övrig utrustning</h3>
-      <ul>
-        <li>Alla rum har luftkonditionering</li>
-        <li>Wi-fi</li>
-        <li>Strykbräda och strykjärn</li>
-        <li>DVD-filmer och pocketböcker</li>
-        <li>Sängkläder, handdukar och strandhanddukar</li>
-        <li>Babysäng och barnstol</li>
-        <li>Sällskapsspel och några leksaker</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="house-grid-item house-card">
-    <div class="house-carousel-background">
-      <carousel>
-        <ng-container *ngFor="let item of outdoorImages;">
-          <ng-container *carouselItem>
-            <img src="{{item.src}}" width="530">
-            <!--<img src="{{item.src}}" class="car-img">-->
-            <div class="house-image-caption">{{item.text}}</div>
-          </ng-container>
-        </ng-container>
-      </carousel>
-    </div>
-    <div class="house-card-text">
-      <h3 class="house-card-header">Utomhus</h3>
-      <p>
-        På övre plan finns en stor balkong med möjlighet till både sol, skugga och
-        havsutsikt. På nedre plan ligger en altan med bord och stolar där många goda
-        frukostar har avnjutits.
-      </p>
-      <p>
-        Det finns två pooler finns på området. Den ena ligger precis utanför dörren,
-        den andra är ett stenkast bort och har barnpool i ena änden.
-      </p>
-      <h3>Övrig utrustning</h3>
-      <ul>
-        <li>2 cyklar</li>
-        <li>Barncyklar</li>
-        <li>4 golfbagar</li>
-        <li>Blandade leksaker</li>
-      </ul>
-    </div>
-  </div>
-</main>
-

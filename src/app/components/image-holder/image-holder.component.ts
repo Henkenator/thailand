@@ -7,23 +7,25 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ImageHolderComponent implements OnInit {
 
-  @Input() images: Array<any>;
-  selectedImage: ThaiImage;
+  @Input() images: Array<ThaiImage>;
 
   private currentSlide = 0;
 
   constructor() { }
 
   ngOnInit() {
-    this.selectedImage = this.images[0];
   }
 
   next() {
-    // this.selectedImage = this.images
+    if (this.currentSlide < this.images.length - 1) {
+      this.currentSlide++;
+    }
   }
 
   prev() {
-
+    if (this.currentSlide > 0) {
+      this.currentSlide--;
+    }
   }
 
 }
