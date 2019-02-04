@@ -1,3 +1,18 @@
+.area-pic {
+  position: relative;
+  overflow: hidden;
+  padding-top: 80%;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .area-grid {
   /*display: flex;
   flex-wrap: wrap;
@@ -23,12 +38,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+    .map-item {
+      width: 100%;
+    }
 }
 
 @media (min-width:950px) {
   .area-grid {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .map-item {
+    max-width: 100%;
+  }
+  .area-pic {
+    padding-top: 50%;
   }
 }
 
@@ -115,17 +139,4 @@
   display: block;
 }
 
-.area-pic {
-  position: relative;
-  overflow: hidden;
-  padding-top: 80%;
-}
 
-.resp-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
