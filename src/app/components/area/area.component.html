@@ -14,14 +14,15 @@
     <div class="area-card">
 
       <div class="area-carousel-background">
-        <carousel>
+        <!--<carousel>
           <ng-container *ngFor="let item of phimImages">
             <ng-container *carouselItem>
               <img src="{{item.src}}" width="530px">
               <div class="area-image-caption">{{item.text}}</div>
             </ng-container>
           </ng-container>
-        </carousel>
+        </carousel>-->
+        <app-image-holder [images]="phimImages"></app-image-holder>
       </div>
 
       <div class="area-card-text">
@@ -54,14 +55,15 @@
     </div>
     <div class="area-card">
       <div class="area-carousel-background">
-        <carousel>
+        <!--<carousel>
           <ng-container *ngFor="let item of mangoImages">
             <ng-container *carouselItem>
               <img src="{{item.src}}" width="530px">
               <div class="area-image-caption">{{item.text}}</div>
             </ng-container>
           </ng-container>
-        </carousel>
+        </carousel>-->
+        <app-image-holder [images]="mangoImages"></app-image-holder>
       </div>
       <div class="area-card-text">
         <p>
