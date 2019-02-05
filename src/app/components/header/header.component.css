@@ -176,7 +176,7 @@
     display: none;
   }
 
-  .nav-menu > li > a:hover,
+  /*.nav-menu > li > a:hover,
   .nav-menu > li > a:focus
   {
     color: var(--orange);
@@ -191,7 +191,7 @@
   li:hover .nav-links__icon,
   li:focus .nav-links__icon {
     display: none;
-  }
+  }*/
 
   .arrow-container {
     position: relative;

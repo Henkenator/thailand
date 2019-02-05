@@ -9,7 +9,7 @@ export class ImageHolderComponent implements OnInit {
 
   @Input() images: Array<ThaiImage>;
 
-  private currentSlide = 0;
+  currentSlide = 0;
 
   constructor() { }
 

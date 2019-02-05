@@ -51,8 +51,8 @@ export class AreaComponent implements OnInit {
     { text: 'Torget i Mae Phim', src: '../../../assets/images/area/maePhim/torg2.jpg'},
 
     { text: 'Skaldjurstallrik', src: '../../../assets/images/area/maePhim/mat1.jpg'},
-    { text: 'Stekta räkor med vitlök', src: '../../../assets/images/area/maePhim/mat3.jpg'},
-    { text: 'Pad Thai och Papayasallad', src: '../../../assets/images/area/maePhim/mat2.jpg'},
+    { text: 'Stekta räkor med vitlök', src: '../../../assets/images/area/maePhim/mat2.jpg'},
+    { text: 'Pad Thai och papayasallad', src: '../../../assets/images/area/maePhim/mat3.jpg'},
     { text: 'Färsk frukt från lokala fruktståndet', src: '../../../assets/images/area/maePhim/mat4.jpg'}
   ];
 
