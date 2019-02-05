@@ -49,7 +49,11 @@ export function submitFormScript() {
       return self.indexOf(item) == pos && item;
     });
 
-    var formData = {};
+    var formData = {
+      formDataNameOrder: {},
+      formGoogleSheetName: {},
+      formGoogleSendEmail: {}
+    };
     fields.forEach(function (name) {
       var element = elements[name];
 
@@ -81,7 +85,7 @@ export function submitFormScript() {
   function handleFormSubmit(event) {  // handles form submit without any jquery
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
-    var data = getFormData(form);         // get the values submitted in the form
+    var data: FormWithEmail = getFormData(form);         // get the values submitted in the form
 
     /* OPTION: Remove this comment to enable SPAM prevention, see README.md
     if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
@@ -106,6 +110,10 @@ export function submitFormScript() {
       }
     } else {
       disableAllButtons(form);
+      var loader = document.querySelector('.loader');
+      var overlay = document.querySelector('.booking-form-item');
+      loader.style.display = 'block'; // show spinner
+      overlay.style.opacity = '0.75'; // make booking form whiter
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
@@ -119,6 +127,8 @@ export function submitFormScript() {
           formElements.style.display = "none"; // hide form
         }*/
 
+        loader.style.display = 'none'; // hide spinner
+        overlay.style.opacity = '1'; // make booking form normal
         if (xhr.status === 200) {
           successfulSubmit.style.display = 'block';
         } else {
@@ -162,4 +172,11 @@ export function submitFormScript() {
 
   // run loaded function to add event listener to the form
   loaded();
+}
+
+export interface FormWithEmail {
+  email?: any;
+  formDataNameOrder?: any;
+  formGoogleSheetName?: any;
+  formGoogleSendEmail?: any;
 }
