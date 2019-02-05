@@ -110,8 +110,8 @@ export function submitFormScript() {
       }
     } else {
       disableAllButtons(form);
-      var loader = document.querySelector('.loader');
-      var overlay = document.querySelector('.booking-form-item');
+      var loader: any = document.querySelector('.loader');
+      var overlay: any = document.querySelector('.booking-form-item');
       loader.style.display = 'block'; // show spinner
       overlay.style.opacity = '0.75'; // make booking form whiter
       var url = form.action;
